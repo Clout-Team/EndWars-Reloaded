@@ -1,0 +1,63 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>EndWars</groupId>
+	<artifactId>EndWars</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<build>
+		<sourceDirectory>src</sourceDirectory>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.3</version>
+				<configuration>
+					<source />
+					<target />
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	<repositories>
+		<repository>
+			<id>your-repo-id</id>
+			<name>Your Repo Name</name>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<url>https://api.bitbucket.org/1.0/repositories/yourBitBucketUsername/endercraftdevs/endercore/raw/master</url>
+		</repository>
+	</repositories>
+	<dependencies>
+		<dependency>
+			<groupId>org.spigotmc</groupId>
+			<artifactId>spigot-api</artifactId>
+			<version>1.10.2-R0.1-SNAPSHOT</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.spigotmc</groupId>
+			<artifactId>spigot</artifactId>
+			<version>1.10.2-R0.1-SNAPSHOT</version>
+			<scope>system</scope>
+			<systemPath>F:\Eclipse2\workspace\workspace\spigot-1.10.2-R0.1-SNAPSHOT-latest.jar</systemPath>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>com.clout-team</groupId>
+			<artifactId>endercore</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+			<scope>compile</scope>
+		</dependency>
+	</dependencies>
+	<distributionManagement>
+		<repository>
+			<id>endercore</id>
+			<name>EnderCore</name>
+			<url>git:master://git@bitbucket.org:yourBitBucketUsername/endercraftdevs/endercore.git</url>
+		</repository>
+	</distributionManagement>
+</project>
+<!-- Replace all yourBitBucketUsername with your real bitbucket username, or it won't work! -->

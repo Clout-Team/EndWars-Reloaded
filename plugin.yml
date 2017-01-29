@@ -1,0 +1,19 @@
+name: EndWars
+version: 1.0.0
+description: A SkyWars minigame for EnderCraft Network
+load: STARTUP
+author: Rexcantor64
+authors: [MasterDoctor]
+website: https://endercraft.uk
+main: com.cloutteam.rexcantor64.endwars.Main
+depends: EnderCore
+commands:
+    admin:
+        description: Admin command for endwars.
+        permission: admin
+        permission-message: Unknown command. Type "/help" for help.
+    leave:
+        description: Leave the game room.
+permissions:
+    admin:
+        default: op
